@@ -1,0 +1,6 @@
+
+knife role from file base.rb
+
+knife ssh *:* -x chef -P Cod3Can! "sudo chef-client"
+
+knife ssh *:* -x chef -P Cod3Can! "ps awux | grep chef-client"
