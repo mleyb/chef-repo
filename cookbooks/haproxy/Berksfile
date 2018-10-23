@@ -2,3 +2,7 @@
 source 'https://supermarket.chef.io'
 
 metadata
+
+# dependencies pulled from chef community by default so we need to override this behaviour
+# for dependency on our local apache cookbook
+cookbook 'apache', path: '../apache'
